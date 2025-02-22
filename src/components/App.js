@@ -14,10 +14,7 @@ function App(){
             setDogImage(data.message);
             setIsLoading(false)
         })
-        .catch((error) => {
-            console.error("Error fetching dog image:", error);
-            setIsLoading(false);
-          });
+        
     }, [])
 
     return(
